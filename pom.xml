@@ -20,11 +20,11 @@
     </modules>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>ru.itpark</groupId>-->
-<!--            <artifactId>jdbc-template</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>ru.itpark</groupId>
+            <artifactId>jdbc-template</artifactId>
+            <version>1.0</version>
+        </dependency>
 
 <!--        <dependency>-->
 <!--            <groupId>ru.itpark</groupId>-->
