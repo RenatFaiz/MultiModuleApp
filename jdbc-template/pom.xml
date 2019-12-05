@@ -12,11 +12,11 @@
         <version>1.0</version>
     </parent>
 
-    <dependencies>
-        <dependency>
-            <groupId>ru.itpark</groupId>
-            <artifactId>shop</artifactId>
-            <version>1.0</version>
-        </dependency>
-    </dependencies>
+<!--    <dependencies>-->
+<!--        <dependency>-->
+<!--            <groupId>ru.itpark</groupId>-->
+<!--            <artifactId>shop</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
+<!--    </dependencies>-->
 </project>
