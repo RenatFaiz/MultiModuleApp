@@ -19,13 +19,12 @@
         <module>jdbc-template</module>
     </modules>
 
-    <dependencyManagement>
     <dependencies>
-        <dependency>
-            <groupId>ru.itpark</groupId>
-            <artifactId>jdbc-template</artifactId>
-            <version>1.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>ru.itpark</groupId>-->
+<!--            <artifactId>jdbc-template</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
 
 <!--        <dependency>-->
 <!--            <groupId>ru.itpark</groupId>-->
@@ -45,8 +44,13 @@
             <version>1.18.10</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>ru.itpark</groupId>
+            <artifactId>jdbc-template</artifactId>
+            <version>1.1</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>
