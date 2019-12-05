@@ -1,5 +1,5 @@
 /out/
-/target/
+target
 /backup/
 !.mvn/wrapper/maven-wrapper.jar
 .txt
@@ -26,5 +26,3 @@
 /dist/
 /nbdist/
 /.nb-gradle/
-
-requests.sql
