@@ -8,6 +8,7 @@
         <artifactId>multi-module-app</artifactId>
         <version>1.0</version>
     </parent>
+    
     <artifactId>shop</artifactId>
     <packaging>jar</packaging>
 

@@ -19,6 +19,7 @@
         <module>jdbc-template</module>
     </modules>
 
+    <dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>ru.itpark</groupId>
@@ -45,6 +46,7 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
