@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jdbc-template.version>1.1</jdbc-template.version>
         <sqlite-jdbc.version>3.28.0</sqlite-jdbc.version>
-<!--        <lombok.version>1.18.10</lombok.version>-->
+        <lombok.version>1.18.10</lombok.version>
     </properties>
     <modules>
         <module>shop</module>
@@ -28,7 +28,12 @@
             <artifactId>sqlite-jdbc</artifactId>
             <version>${sqlite-jdbc.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>compile</scope>
+        </dependency>
         <dependency>
             <groupId>ru.itpark</groupId>
             <artifactId>jdbc-template</artifactId>
