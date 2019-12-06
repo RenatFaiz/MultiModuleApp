@@ -5,10 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>shop</artifactId>
+    <version>1.0</version>
 <!--    <packaging>jar</packaging>-->
     <parent>
         <groupId>ru.itpark</groupId>
         <artifactId>multi-module-app</artifactId>
         <version>1.0</version>
     </parent>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+        </dependency>
+    </dependencies>
 </project>
