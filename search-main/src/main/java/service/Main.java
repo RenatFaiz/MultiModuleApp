@@ -1,5 +1,6 @@
+package service;
+
 import model.Product;
-import service.Order;
 import util.JdbcTemplate;
 import util.RowMapper;
 
@@ -12,15 +13,17 @@ public class Main {
 
       //  String sql = "UPDATE products SET name = ? WHERE id = ? ;";
 
-        System.out.println(JdbcTemplate.updateProductName("jdbc:sqlite:db.sqlite", "products",
+        System.out.println(JdbcTemplate.updateName("jdbc:sqlite:db.sqlite", "products",
                 "iphone", 0));
-        System.out.println(JdbcTemplate.updateProductName("jdbc:sqlite:db.sqlite", "products",
+        System.out.println(JdbcTemplate.updateName("jdbc:sqlite:db.sqlite", "products",
                 "Микроволновая печь V-HOME P70H20L-KH", 0));
 
 
         String sql2 = "SELECT id, name, category, quantity, isAvailable," +
                 " price FROM products WHERE price BETWEEN ? AND ? ;";
-        System.out.println(JdbcTemplate.selectProductsByPrice(url, sql2, 0, 5000,
+//        String sql2 = "SELECT id, name, category, quantity, isAvailable," +
+//                " price FROM products WHERE price > ? AND isAvailable = ?;";
+        System.out.println(JdbcTemplate.selectByParameters(url, sql2, 100, 5000,
                 new RowMapper<Product>() {
                     @Override
                     public Product map(ResultSet rs) throws SQLException {
@@ -41,7 +44,7 @@ public class Main {
                 " price FROM" + x;
       //  System.out.println(sql3 = sql3.concat(" products;"));
 
-        System.out.println(JdbcTemplate.selectAllProducts(url, sql3,
+        System.out.println(JdbcTemplate.executeQuery(url, sql3,
                 new RowMapper<Product>() {
                     @Override
                     public Product map(ResultSet rs) throws SQLException {
@@ -62,7 +65,7 @@ public class Main {
                 " order_price, delivery, status," +
                 " datetime FROM orders ORDER BY datetime DESC ;";
 
-        System.out.println(JdbcTemplate.getOrdersByDateDesc(url, sql4,
+        System.out.println(JdbcTemplate.executeQuery(url, sql4,
                 new RowMapper<Order>() {
                     @Override
                     public Order map(ResultSet rs) throws SQLException {
