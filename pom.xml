@@ -9,19 +9,28 @@
     <version>1.0</version>
     <packaging>pom</packaging>
 
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jdbc-template.version>1.1</jdbc-template.version>
-        <sqlite-jdbc.version>3.28.0</sqlite-jdbc.version>
-        <lombok.version>1.18.10</lombok.version>
-    </properties>
     <modules>
         <module>shop</module>
         <module>jdbc-template</module>
         <module>search-main</module>
     </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/RenatFaiz/MultiModuleApp</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <sqlite-jdbc.version>3.28.0</sqlite-jdbc.version>
+        <lombok.version>1.18.10</lombok.version>
+        <jdbc-template.version>1.1</jdbc-template.version>
+        <shop.version>1.0</shop.version>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -45,24 +54,18 @@
             <dependency>
                 <groupId>ru.itpark</groupId>
                 <artifactId>shop</artifactId>
-                <version>1.0</version>
+                <version>${shop.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
 
-
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/RenatFaiz/MultiModuleApp</url>
-        </repository>
-    </distributionManagement>
     <repositories>
         <repository>
             <id>github</id>
             <url>https://maven.pkg.github.com/RenatFaiz/MultiModuleApp</url>
         </repository>
     </repositories>
+
     <build>
         <plugins>
             <plugin>
@@ -81,7 +84,7 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
+
 </project>

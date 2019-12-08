@@ -4,14 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>shop</artifactId>
-    <version>1.0</version>
-<!--    <packaging>jar</packaging>-->
     <parent>
         <groupId>ru.itpark</groupId>
         <artifactId>multi-module-app</artifactId>
         <version>1.0</version>
     </parent>
+
+    <artifactId>shop</artifactId>
+    <version>1.0</version>
+
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -19,4 +20,5 @@
             <version>1.18.10</version>
         </dependency>
     </dependencies>
+
 </project>

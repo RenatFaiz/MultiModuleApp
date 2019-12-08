@@ -2,4 +2,4 @@
 
 Мультимодульный проект, в котором одно приложение подключает JdbcTemplate как \
 depedency и использует для работы с СУБД (реализуйте два демонстрационных запроса:\
-обычный Statement и PreparedStatement) 
+обычный Statement и PreparedStatement). 
