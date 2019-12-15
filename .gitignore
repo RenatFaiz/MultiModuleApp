@@ -1,6 +1,7 @@
-/out/
+settings.xml
+out
 target
-/backup/
+backup
 !.mvn/wrapper/maven-wrapper.jar
 .txt
 
